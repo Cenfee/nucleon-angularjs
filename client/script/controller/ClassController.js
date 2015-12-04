@@ -10,6 +10,8 @@ app.controller("ClassController", function($rootScope, $location, $scope, ClassM
         $scope.userClasses = [];
         $.extend(true, $scope.userClasses, data);
         $scope.userClasses[0].active = "active";
+
+        updateCoursePackage(0);
     }
 
 
@@ -17,14 +19,13 @@ app.controller("ClassController", function($rootScope, $location, $scope, ClassM
 
     function coursePackageGettedSuccessHandler(event, data)
     {
-        $scope.userClasses[classIndex].appWeekList = [];
-        $.extend(true, $scope.userClasses[classIndex].appWeekList, data.appWeekList);
+        $scope.userClasses[0].appWeekList = [];
+        $.extend(true, $scope.userClasses[0].appWeekList, data.appWeekList);
     }
 
 
 
-    updateCoursePackage(0);
-
+//现在只是初始化第一页，改成一直监听model变化
 
 
     updateClass();
