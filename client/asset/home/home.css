@@ -1,0 +1,133 @@
+@charset "utf-8";
+/* CSS Document */
+#header
+{
+    height:250px ;
+    background-color: #f05870;
+}
+
+#header-control
+{
+    height:56px;
+}
+
+#header-control-setup
+{
+    float:right;
+    height:36px;
+    margin:10px 30px;
+}
+
+#header-head
+{
+    height:200px;
+    text-align: center;
+}
+#header-head-main
+{
+    margin:30px auto;
+    border-radius: 50%;
+}
+
+#main
+{
+    margin-bottom: 80px;
+}
+#main-class
+{
+
+    margin-top: 20px;
+}
+
+#main-class-title-label
+{
+    border-left: 4px solid #f05870;
+    margin-left:10px;
+    padding-left:10px;
+    line-height: 20px;
+    color:#000000;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#main-class-title-more
+{
+    line-height: 20px;
+    padding-right: 10px;
+    color:#a0a0a0;
+    font-size: 18px;
+    font-weight: bold;
+    float:right;
+}
+
+#main-class img
+{
+    width:100%;
+    margin-top:10px;
+}
+
+#main-record
+{
+    margin-top:20px;
+}
+
+
+#main-record-title-label
+{
+    border-left: 4px solid #f05870;
+    margin-left:10px;
+    padding-left:10px;
+    line-height: 20px;
+    color:#000000;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#main-record img
+{
+    width:100%;
+    margin-top:10px;
+}
+
+#main-works
+{
+
+    margin-top: 20px;
+}
+#main-works-title-label
+{
+    border-left: 4px solid #f05870;
+    margin-left:10px;
+    padding-left:10px;
+    line-height: 20px;
+    color:#000000;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#main-works img
+{
+    width:100%;
+    margin-top:10px;
+}
+
+#footer
+{
+    position:fixed;
+    width:100%;
+    bottom: 0px;
+}
+#footer-menu
+{
+    margin: 0;
+    padding:0;
+    height:80px;
+    background-color:#f4f2f3 ;
+}
+#footer-menu li
+{
+    text-align: center;
+    width:33.3%;
+    padding: 17.5px 0px;
+    float: left;
+}

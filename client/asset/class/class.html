@@ -1,0 +1,69 @@
+
+<div>
+    <div id="header">
+        <nav>
+            <a>课程介绍</a>
+            <a>课程目录</a>
+        </nav>
+    </div>
+
+    <div>
+
+        <ul class="nav nav-pills" id="myTab">
+            <li class="{{item.active}}"  ng-repeat="item in userClasses">
+                <a href="/#main-class-{{item.id}}" data-toggle="tab">{{item.name}}</a>
+            </li>
+
+        </ul>
+
+        <div class="tab-content">
+            <div class="tab-pane {{item.active}}" id="main-class-{{item.id}}"  ng-repeat="item in userClasses">
+                <div id="class-image">
+                    <img src="asset/common/homework.png"/>
+                </div>
+
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+                    <div class="panel">
+                        <div class="panel-heading" role="tab">
+
+                            <a data-parent="#accordion" href="http://baidu.com/">每日熬鸡汤</a>
+
+                        </div>
+                    </div>
+
+                    <div class="panel"  ng-repeat="itemCourse in item.appWeekList">
+                        <div class="panel-heading" role="tab">
+                            <a data-toggle="collapse" data-parent="#accordion" href="/#main-class-course-{{itemCourse.id}}">{{itemCourse.name}}</a>
+                        </div>
+                        <div id="main-class-course-{{itemCourse.id}}" class="panel-collapse collapse">
+                            <ul class="list-group">
+                                <li class="list-group-item"  ng-repeat="itemCourseLink in itemCourse.links">
+                                    <a href="{{itemCourseLink.url}}">{{itemCourseLink.title}}</a>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<script>
+
+    $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+        alert(e);
+        var target = $(e.target).attr("href") // activated tab
+        alert(target);
+    });
+</script>
+<link href="asset/class/class.css" rel="stylesheet">

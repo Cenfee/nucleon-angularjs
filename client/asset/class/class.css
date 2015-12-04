@@ -1,0 +1,46 @@
+@charset "utf-8";
+/* CSS Document */
+
+#header
+{
+    padding-top:0.1px;
+    height:110px;
+    background-color:#F05871 ;
+}
+#header nav
+{
+    margin:30px auto ;
+    width:335px;
+    height:50px;
+    border: 2px solid #FFE6EA;
+    border-radius: 10px;
+}
+
+#header nav a
+{
+    float: left;
+    color:#FFE6EA;
+
+    font-size: 20px;
+    font-weight: bold;
+    text-align:center;
+    display: inline-block;
+    width:50%;
+    line-height: 50px;
+    height:50px;
+    border-radius: 7px;
+}
+#header nav a:last-child
+{
+    color:#F05871;
+    background-color:#FFE6EA ;
+}
+
+#class-image
+{
+    margin-top:10px;
+}
+#class-image img
+{
+    width:100%;
+}
